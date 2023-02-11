@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: helloworld
-          image: nabalas/helloworld:c9d75a96268f00c2aabe54cc6e6e0a0fd505831c
+          image: helloworld:c9d75a96268f00c2aabe54cc6e6e0a0fd505831c
           imagePullPolicy: Always
           ports:
             - containerPort: 80
