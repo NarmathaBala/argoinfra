@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: helloworld
-          image: narmathabala/argocicd
+          image: NarmathaBala/argocicd
           imagePullPolicy: Always
           ports:
             - containerPort: 80
