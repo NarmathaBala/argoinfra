@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloworld
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: helloworld
+  template:
+    metadata:
+      labels:
+        app: helloworld
+    spec:
+      containers:
+        - name: helloworld
+          image: narmathabala/argocicd:604ac3b39a717bbceb7e0386debaed67fd7857bb
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
